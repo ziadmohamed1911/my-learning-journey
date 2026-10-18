@@ -1,0 +1,51 @@
+*, *:after, *::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* layout */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5em;
+    gap: 1.5em;
+}
+
+.logo-text{
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #090909;
+}
+
+.logo-icon{
+    font-size: 0.8rem;
+    color: #090909;
+}
+
+nav ul{
+    display: flex;
+    gap: 1.8em;
+    list-style: none;
+}
+
+nav ul a{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #090909;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul a:hover,
+nav ul a:focus{
+    transform: scale(1.1);
+    color: #0c2252;
+}
