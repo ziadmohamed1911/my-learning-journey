@@ -28,6 +28,8 @@ header {
     color: #090909;
 }
 
+/* nav bar */
+
 nav ul{
     display: flex;
     gap: 1.8em;
@@ -48,4 +50,43 @@ nav ul a:hover,
 nav ul a:focus{
     transform: scale(1.1);
     color: #0c2252;
+}
+
+/* main article */
+
+a {
+    text-decoration: none;
+}
+
+.main-article{
+    min-height: 330px;
+    padding: 1.5em 1em;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #ffff;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(images/main-article-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+}
+
+.date{
+    display: inline-block;
+    margin: 0 0 1.25em;
+    font-size: 0.75rem;
+    font-weight: 200;
+}
+
+.main-article-title{
+    margin: 0 0 0.36em;
+    font-size: 1.75rem;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.main-article-text{
+    margin: 0px;
+    line-height: 1.4;
+    font-weight: 300;
 }
