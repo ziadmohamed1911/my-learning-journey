@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Journal | Home</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200..800&display=swap" rel="stylesheet">
 
-    <!-- Font Awsome -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link rel="stylesheet" href="style.css">
-
-    <title>My learning Journal | Home</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <i class="fa-solid fa-book logo-icon"></i>
+            <i class="fa-solid fa-book logo-icon" aria-hidden="true"></i>
             <span class="logo-text">My Learning Journal</span>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="pages/about/about.html">About me</a></li>
             </ul>
         </nav>
@@ -32,11 +31,10 @@
 
     <main>
         <section class="main-article-section">
-            
             <a class="main-article" href="pages/main-article/main-article.html">
                 <article>
-                    <span class="date">September 18, 2026</span>
-                    <h1 class="main-article-title">My New Journey To Learn Full-stack Devoloping With Scrimba</h1>
+                    <time class="main-article-date" datetime="2026-09-18">September 18, 2026</time>
+                    <h1 class="main-article-title">My New Journey To Learn Full-stack Developing With Scrimba</h1>
                     <p class="main-article-text">The day I started my full-stack journey, I had zero money and zero experience. Now I’m learning every day and working to become the best version of myself.</p>
                 </article>
             </a>
@@ -44,67 +42,70 @@
 
         <section class="articles">
             <div class="articles-grid">
-                <a href="#" class="article">
-                    <article>
+                <article class="article">
+                    <a class="article-link" href="#">
                         <img class="article-img" src="images/article1-img.webp" alt="Laptop on a table" width="500" height="250" loading="lazy">
-                        <span class="article-date">September 18, 2026</span>
+                        <time class="article-date" datetime="2026-09-18">September 18, 2026</time>
                         <h2 class="article-title">First Learning Day</h2>
                         <p class="article-text">On my first day of learning, I wrote one line of code, refreshed the browser, and saw my own heading appear on the page. The screen stopped looking like a wall and started looking like a door.</p>
-                    </article>
-                </a>
+                    </a>
+                </article>
 
-                <a href="#" class="article">
-                    <article>
-                        <img class="article-img" src="images/article2-img.webp" alt="A small yellow piece of paper with a drawing of a small lamp on it" width="500" height="250" loading="lazy">
-                        <span class="article-date">September 28, 2026</span>
+                <article class="article">
+                    <a class="article-link" href="#">
+                        <img class="article-img" src="images/article2-img.webp" alt="A yellow sticky note with a drawing of a light bulb" width="500" height="250" loading="lazy">
+                        <time class="article-date" datetime="2026-09-28">September 28, 2026</time>
                         <h2 class="article-title">Getting Ideas</h2>
                         <p class="article-text">I get my project ideas from small problems I notice in daily life, like “What annoys me, or what could work better?” Then I build the simplest version of the answer and improve it from there.</p>
-                    </article>
-                </a>
+                    </a>
+                </article>
 
-                <a href="#" class="article">
-                    <article>
-                        <img class="article-img" src="images/article3-img.webp" alt="Screen showing some programing code on it" width="500" height="250" loading="lazy">
-                        <span class="article-date">October 5, 2026</span>
+                <article class="article">
+                    <a class="article-link" href="#">
+                        <img class="article-img" src="images/article3-img.webp" alt="Screen showing programming code" width="500" height="250" loading="lazy">
+                        <time class="article-date" datetime="2026-10-05">October 5, 2026</time>
                         <h2 class="article-title">Coding Difficulty</h2>
                         <p class="article-text">When I started, code felt like a foreign language, and every error made me want to quit. Now I read the same lines with confidence, because each mistake I fixed along the way turned something confusing into something familiar.</p>
-                    </article>
-                </a>
+                    </a>
+                </article>
 
-                <a href="#" class="article">
-                    <article>
-                        <img class="article-img" src="images/article4-img.webp" alt="A qoute written on brwon background" width="500" height="250" loading="lazy">
-                        <span class="article-date">October 8, 2026</span>
+                <article class="article">
+                    <a class="article-link" href="#">
+                        <img class="article-img" src="images/article4-img.webp" alt="A quote written on a brown background" width="500" height="250" loading="lazy">
+                        <time class="article-date" datetime="2026-10-08">October 8, 2026</time>
                         <h2 class="article-title">Importance of Time</h2>
                         <p class="article-text">Time is the one thing I can’t get back, so I’ve started treating every hour as something worth planning. Learning a little each day has taught me that steady time beats rushed effort, and that a year of small daily steps can change my whole career.</p>
-                    </article>
-                </a>
+                    </a>
+                </article>
 
-                <a href="#" class="article">
-                    <article>
+                <article class="article">
+                    <a class="article-link" href="#">
                         <img class="article-img" src="images/article5-img.webp" alt="A small yellow bus in the desert" width="500" height="250" loading="lazy">
-                        <span class="article-date">October 10, 2026</span>
+                        <time class="article-date" datetime="2026-10-10">October 10, 2026</time>
                         <h2 class="article-title">The Journey</h2>
-                        <p class="article-text">Every step of this journey, from customer service to writing my first lines of code, has taught me that progress rarely looks like a leap. It looks like showing up, fixing small mistakes, and trusting that the road I'm building today will lead somewhere I'm proud of.</p>
-                    </article>
-                </a>
+                        <p class="article-text">Every step of this journey, from customer service to writing my first lines of code, has taught me that progress rarely looks like a leap. It looks like showing up, fixing small mistakes, and trusting that the road I’m building today will lead somewhere I’m proud of.</p>
+                    </a>
+                </article>
 
-                <a href="#" class="article">
-                    <article>
-                        <img class="article-img" src="images/article6-img.webp" alt="blue modern city" width="500" height="250" loading="lazy">
-                        <span class="article-date">October 5, 2026</span>
+                <article class="article">
+                    <a class="article-link" href="#">
+                        <img class="article-img" src="images/article6-img.webp" alt="A blue modern city" width="500" height="250" loading="lazy">
+                        <time class="article-date" datetime="2026-10-05">October 5, 2026</time>
                         <h2 class="article-title">Technology</h2>
                         <p class="article-text">Technology keeps reminding me that every app I use started as someone’s simple idea and a few lines of code. Learning to build with it has shown me that I’m not just a user anymore, I can be someone who creates what others will use.</p>
-                    </article>
-                </a>
-                </div>
+                    </a>
+                </article>
+            </div>
 
-            <button class="view-more" id="view-more">View More</button>
+            <button class="view-more" id="view-more" type="button">View more</button>
         </section>
     </main>
 
-    <footer id="footer"></footer>
+    <footer>
+        <h2>My Learning Journal</h2>
+        <p>&copy; <span id="year"></span></p>
+    </footer>
 
-    <script src="index.js" type="module" defer></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

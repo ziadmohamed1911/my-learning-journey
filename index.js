@@ -1,40 +1,35 @@
-const cards = document.querySelectorAll(".articles-grid .article")
-const viewMoreBTn = document.getElementById("view-more")
-const footer = document.getElementById("footer")
+const BATCH_SIZE = 3;
+const MOBILE_INITIAL_COUNT = 3;
+const DESKTOP_INITIAL_COUNT = 6;
 
-const BATCH_Size = 3
-const desktopQuery = window.matchMedia("(min-width: 768px)")
+const cards = document.querySelectorAll(".articles-grid .article");
+const viewMoreBtn = document.getElementById("view-more");
+const yearEl = document.getElementById("year");
+const desktopQuery = window.matchMedia("(min-width: 768px)");
 
 function getInitialCount() {
-    return desktopQuery.matches ? 6:3
+    return desktopQuery.matches ? DESKTOP_INITIAL_COUNT : MOBILE_INITIAL_COUNT;
 }
 
-let visibleCount = getInitialCount()
+let visibleCount = getInitialCount();
 
-function updateCards (){
-    cards.forEach((card, index) =>{
-        card.classList.toggle("is-hidden", index >= visibleCount)
-    })
+function updateCards() {
+    cards.forEach((card, index) => {
+        card.hidden = index >= visibleCount;
+    });
 
-    viewMoreBTn.classList.toggle("is-hidden", visibleCount >= cards.length)
+    viewMoreBtn.hidden = visibleCount >= cards.length;
 }
 
+viewMoreBtn.addEventListener("click", () => {
+    visibleCount += BATCH_SIZE;
+    updateCards();
+});
 
-viewMoreBTn.addEventListener("click", () => {
-    visibleCount += BATCH_Size
-    updateCards()
-})
+desktopQuery.addEventListener("change", () => {
+    visibleCount = getInitialCount();
+    updateCards();
+});
 
-desktopQuery.addEventListener("change",() => {
-    visibleCount = getInitialCount()
-    updateCards()
-})
-
-function updateFooter(){
-    footer.innerHTML = `
-        <h2>My Learning journal</h2>
-        <p>Copyright &copy;${new Date().getFullYear()}</p>`
-}
-
-updateCards()
-updateFooter()
+yearEl.textContent = new Date().getFullYear();
+updateCards();
