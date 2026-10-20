@@ -1,5 +1,6 @@
 const cards = document.querySelectorAll(".articles-grid .article")
 const viewMoreBTn = document.getElementById("view-more")
+const footer = document.getElementById("footer")
 
 const BATCH_Size = 3
 const desktopQuery = window.matchMedia("(min-width: 768px)")
@@ -29,4 +30,11 @@ desktopQuery.addEventListener("change",() => {
     updateCards()
 })
 
+function updateFooter(){
+    footer.innerHTML = `
+        <h2>My Learning journal</h2>
+        <p>Copyright &copy;${new Date().getFullYear()}</p>`
+}
+
 updateCards()
+updateFooter()
