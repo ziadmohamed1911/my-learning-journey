@@ -1,3 +1,3 @@
-const yearEl = document.getElementById("year");
+const yearEl = document.getElementById("year")
 
-yearEl.textContent= new Date().getFullYear()
+yearEl.textContent = new Date().getFullYear()
