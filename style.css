@@ -90,3 +90,83 @@ a {
     line-height: 1.4;
     font-weight: 300;
 }
+
+/* article */
+
+.articles{
+    margin: 2em 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    gap: 40px;
+    
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    color: black;
+}
+
+.article-img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+}
+
+.article-date{
+    display: inline-block;
+    margin: 2.08em 0 0.75em 0;
+    font-size: 0.75rem;
+}
+
+.article-title{
+    margin: 0 0 0.23em;
+    font-size: 2.19rem;
+}
+
+.article-text {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+/* view-more button */
+.view-more {
+    margin: 1.5em auto;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1.25rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #202020;
+    color: white;
+    padding: 2.5em 0;
+}
+
+footer h2 {
+    margin: 0 0 0.25em;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer p{
+    font-size: 0.75rem;
+    margin: 0;
+    font-weight: 200;
+}
