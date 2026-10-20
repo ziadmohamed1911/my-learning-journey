@@ -1,0 +1,243 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text: #090909;
+    --color-hover: #0c2252;
+    --color-footer: #202020;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #FAFAFA;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1em 0.5em;
+    background-color: #fff;
+}
+
+.logo-text {
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.logo-icon {
+    font-size: 0.8rem;
+    color: var(--color-text);
+}
+
+/* Nav */
+
+nav ul {
+    display: flex;
+    gap: 1.8em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text);
+    transition: 0.3s ease-in-out;
+}
+
+nav ul a:hover,
+nav ul a:focus-visible {
+    transform: scale(1.1);
+    color: var(--color-hover);
+}
+
+/* About section */
+
+.about-me {
+    padding: 2.5em 1.25em;
+}
+
+.avatar{
+    display: block;
+    width: 180px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center top;
+    margin: 0 0 2.5em;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 0.6em;
+    letter-spacing: -0.03em;
+}
+
+.about-me-text{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #222;
+    margin: 0;
+}
+
+
+/* FAQS */
+
+.FAQs {
+    padding: 2.5em 1.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.FAQ h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.article-text {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 0 20px;
+}
+
+/* recent-posts */
+
+.section-title{
+    margin: 2em 0 0;
+    text-align: center;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 2em;
+    padding-bottom: 3em;
+}
+
+.article {
+    padding: 0 20px;
+}
+
+.article-link {
+    display: block;
+    color: #000;
+}
+
+.article-img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.article-date {
+    display: block;
+    margin: 2.08em 0 0.75em;
+    font-size: 0.75rem;
+}
+
+.article-title {
+    margin: 0 0 0.23em;
+    font-size: 2.19rem;
+}
+
+.article-text {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 2.5em 0;
+    background-color: var(--color-footer);
+    color: #fff;
+}
+
+footer h2 {
+    margin: 0 0 0.25em;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 200;
+}
+
+/* Responsivness */
+
+@media (min-width: 768px) {
+    header {
+        padding: 1.5em 1em;
+    }
+
+    .about-me {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2.5em 1.5em;
+    }
+
+    .avatar{
+        width: 150px;
+        flex-shrink: 0;
+        margin: 0;
+    }
+    
+    .h1 {
+        margin: 0 0 0.4em;
+        font-size: 1.75rem;
+    }
+
+    .about-content{
+        flex: 1;
+    }
+
+    .FAQs{
+        max-width: 850px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .about-me-text{
+        font-size: 0.85rem;
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px 30px;
+    }
+}
