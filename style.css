@@ -98,7 +98,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     gap: 40px;
-    
+    padding-bottom: 3em;
 }
 
 .article{
@@ -107,6 +107,10 @@ a {
     justify-content: flex-start;
     padding: 0 20px;
     color: black;
+}
+
+.article.is-hidden{
+    display: none;
 }
 
 .article-img{
@@ -146,6 +150,10 @@ a {
     background: transparent;
     border: none;
     font-family: inherit;
+}
+
+.view-more.is-hidden{
+    display: none;
 }
 
 /* footer */
