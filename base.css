@@ -1,0 +1,20 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text: #090909;
+    --color-hover: #0c2252;
+    --color-footer: #202020;
+    --color-bg: #fafafa;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-bg);
+}
+
+a {
+    text-decoration: none;
+}
